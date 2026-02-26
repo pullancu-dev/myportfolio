@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education — Crystal U. Pullan</title>
+  <link rel="stylesheet" href="../shared.css"/>
+  <style>
+    .edu-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); margin-bottom: 14px; transition: box-shadow 0.2s; }
+    .edu-card:hover { box-shadow: var(--shadow-hover); }
+    .edu-degree { font-family: 'DM Serif Display', serif; font-size: 18px; margin-bottom: 4px; }
+    .edu-school { font-size: 14px; font-weight: 500; color: var(--muted); margin-bottom: 3px; }
+    .edu-year { font-size: 13px; color: var(--muted2); margin-bottom: 12px; }
+    .edu-badge { display: inline-block; background: var(--accent-light); color: var(--accent); border: 1px solid var(--accent); border-radius: 20px; padding: 3px 12px; font-size: 12px; font-weight: 500; margin-bottom: 10px; }
+    .edu-desc { font-size: 13.5px; color: var(--muted); line-height: 1.7; }
+    .honors { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+  </style>
+</head>
+<body>
+<div class="page">
+  <a href="../index.html" class="back-link">← Back to Home</a>
+  <div class="page-title">Education</div>
+  <div class="page-subtitle">Academic background and credentials.</div>
+
+  <div class="edu-card">
+    <div class="edu-badge">🎓 Current</div>
+    <div class="edu-degree">Bachelor of Science in Computer Engineering</div>
+    <div class="edu-school">National University – Laguna</div>
+    <div class="edu-year">2022 – Present (Expected Graduation: July 2026)</div>
+    <div class="edu-desc">Pursuing a BS in Computer Engineering with focus on embedded systems, IoT, and artificial intelligence. Active in multiple student organizations as President of NUL-ACES and VP for Robotics at NUL-MRSP.</div>
+    <div class="honors">
+      <span class="tag">Embedded Systems</span>
+      <span class="tag">IoT</span>
+      <span class="tag">Artificial Intelligence</span>
+      <span class="tag">Robotics</span>
+      <span class="tag">Circuit Design</span>
+    </div>
+  </div>
+
+  <div class="edu-card">
+    <div class="edu-badge">📘 Completed</div>
+    <div class="edu-degree">Senior High School – TVL-ICT Track</div>
+    <div class="edu-school">Upland Integrated National High School</div>
+    <div class="edu-year">2020 – 2022</div>
+    <div class="edu-desc">Completed the Technical-Vocational-Livelihood strand with specialization in Information and Communications Technology, focusing on Computer Systems Servicing. Graduated with NC II certification.</div>
+    <div class="honors">
+      <span class="tag">TVL-ICT</span>
+      <span class="tag">Computer Systems Servicing</span>
+      <span class="tag">NC II</span>
+    </div>
+  </div>
+
+  <div class="site-footer">© 2026 Crystal U. Pullan. All Rights Reserved.</div>
+</div>
+<button class="chat-btn" onclick="toggleChat()"><span class="chat-online"></span> Chat with Crystal</button>
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-header"><div class="chat-av">👩🏻‍💻</div><div><div class="chat-name">Crystal Pullan</div><div class="chat-status">● Online</div></div><button class="chat-close" onclick="toggleChat()">✕</button></div>
+  <div class="chat-messages" id="chatMessages"><div class="bubble">Hi! Feel free to ask about my educational background! 😊</div></div>
+  <div class="chat-hint">Ask me anything!</div>
+  <div class="chat-footer"><input class="chat-input" id="chatInput" placeholder="Type a message..." maxlength="200"/><button class="chat-send" onclick="sendChat()">➤</button></div>
+</div>
+<script src="../shared.js"></script>
+</body>
+</html>
